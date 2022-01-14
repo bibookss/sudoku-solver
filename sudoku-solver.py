@@ -13,7 +13,7 @@ BLUE = (173, 216, 230)
 FPS = 120
 
 ARRAY = [ 
-    [0, 0, 7, 5, 0, 0, 6, 0, 3], 
+    [0, 8, 7, 5, 0, 0, 6, 0, 3], 
     [4, 3, 0, 0, 0, 6, 0, 0, 5], 
     [6, 0, 8, 1, 0, 9, 0, 2, 7], 
     [2, 0, 6, 4, 5, 0, 0, 0, 0], 
@@ -130,6 +130,9 @@ def main():
         if solvePuzzle(ARRAY):
             solved = py.font.SysFont("arial", BLOCK_SIZE).render(("SOLVED!"), True, BLACK)
             gameDisplay.blit(solved, [3 * BLOCK_SIZE, 9 * BLOCK_SIZE])
+        else:
+            unsolved = py.font.SysFont("arial", BLOCK_SIZE).render(("NO SOLUTION!"), True, BLACK)
+            gameDisplay.blit(unsolved, [2 * BLOCK_SIZE, 9 * BLOCK_SIZE])
         py.display.flip()
         gameClock.tick(FPS)
 
