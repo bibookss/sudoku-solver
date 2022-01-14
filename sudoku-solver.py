@@ -1,6 +1,3 @@
-from lib2to3 import pygram
-from operator import truediv
-from turtle import pu
 import pygame as py
 
 BLOCK_SIZE = 100
