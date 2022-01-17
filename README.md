@@ -1,2 +1,2 @@
 # sudoku-solver
-A simple sudoku solver using backtracking.
+A simple sudoku solver with graphics made using PyGame.
